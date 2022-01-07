@@ -34,3 +34,12 @@ jobs:
         run: |
           echo Add other actions to build,
           echo test, and deploy your project.
+      - name: Middleman Github Pages Action
+        # You may pin to the exact commit or the version.
+        # uses: yurikoval/middleman-gh-pages-action@69b82c455bc90a0327079f891e3f525fb9ff8567
+        uses: yurikoval/middleman-gh-pages-action@v1.0.0
+        with:
+          # Github repository to push built site to
+          GITHUB_REPOSITORY: computamike/aegsite 
+          # Name of the deploy actor
+          GITHUB_ACTOR: Marvin
